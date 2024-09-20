@@ -7,6 +7,10 @@ public:
 		this->data = data;
 		this->next = 0;
 	}
-	void traverse();     // Traverses the linked list starting from this node
+	void traverse();
 	int findNodeMiddle();
 };
+
+Node* sortedListCombine(Node* n1, Node* n2);
+Node* findIntersection(Node* head1, Node* head2);
+void deleteList(Node* head);
