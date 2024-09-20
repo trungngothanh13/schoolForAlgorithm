@@ -8,4 +8,5 @@ public:
 		this->next = 0;
 	}
 	void traverse();     // Traverses the linked list starting from this node
+	int findNodeMiddle();
 };

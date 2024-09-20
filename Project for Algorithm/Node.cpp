@@ -11,3 +11,15 @@ void Node::traverse() {
     }
     cout << endl;
 }
+
+int Node::findNodeMiddle()
+{
+	if (this == 0) return -1;
+	Node* slow = this;
+	Node* fast = this;
+	while (fast != 0 && fast->next != 0) {
+		slow = slow->next;
+		fast = fast->next->next;
+	}
+	return slow->data;
+}

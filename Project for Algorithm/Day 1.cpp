@@ -5,18 +5,6 @@
 using namespace std;
 
 
-
-int findNodeMiddle(Node* head) {
-	if (head == 0) return -1;
-	Node* slow = head;
-	Node* fast = head;
-	while (fast != 0 && fast->next != 0) {
-		slow = slow->next;
-		fast = fast->next->next;
-	}
-	return slow->data;
-}
-
 Node* sortedListCombine(Node* n1, Node* n2) {
 	Node* dummy = new Node(0);
 	Node* dummyTail = dummy;
@@ -106,9 +94,10 @@ int main()
 	n6->next = 0;
 
 
-	Node* result = findIntersection(head1, head2);
-	result->traverse();
-	deleteList(result);
+	int result = head1->findNodeMiddle();
+	cout << result;
+	//result->traverse();
+	//deleteList(result);
 
 
 }
