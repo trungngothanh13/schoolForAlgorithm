@@ -18,7 +18,7 @@ int main()
 	anotherExampleList.insertion(7);
 	anotherExampleList.insertion(19);
 	anotherExampleList.insertion(26);
-	anotherExampleList.insertion(45);
+	anotherExampleList.insertion(132);
 
 	List anotherAnotherExampleList;
 	anotherAnotherExampleList.findIntersection(exampleList, anotherExampleList);
