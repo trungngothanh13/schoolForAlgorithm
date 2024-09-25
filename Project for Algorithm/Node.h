@@ -7,8 +7,6 @@ public:
 		this->data = data;
 		this->next = 0;
 	}
-	void traverse();
-	int findNodeMiddle();
 };
 
 Node* sortedListCombine(Node* n1, Node* n2);

@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{e01deafd-9fa9-470d-9780-ac314940c2d6}</ProjectGuid>
-    <RootNamespace>ProjectforAlgorithm</RootNamespace>
+    <ProjectGuid>{b34021de-b69a-4b73-a2c2-cae4cd106add}</ProjectGuid>
+    <RootNamespace>DoublyLinkedList</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,12 +127,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Day 1.cpp" />
-    <ClCompile Include="List.cpp" />
+    <ClCompile Include="Doubly Linked List.cpp" />
     <ClCompile Include="Node.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="List.h" />
     <ClInclude Include="Node.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
