@@ -129,7 +129,7 @@
   <ItemGroup>
     <ClCompile Include="List.cpp" />
     <ClCompile Include="Queue.cpp" />
-    <ClCompile Include="Stack n Queue.cpp" />
+    <ClCompile Include="Day 2.cpp" />
     <ClCompile Include="Stack.cpp" />
   </ItemGroup>
   <ItemGroup>
