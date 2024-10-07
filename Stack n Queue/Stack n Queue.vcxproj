@@ -24,6 +24,7 @@
     <ProjectGuid>{d8f1d0ab-3ffa-44f8-8112-e4136e0f2c5e}</ProjectGuid>
     <RootNamespace>StacknQueue</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Day 2</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
