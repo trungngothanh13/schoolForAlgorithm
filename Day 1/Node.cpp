@@ -3,5 +3,3 @@
 
 using namespace std;
 
-
-// Implement findIntersection() here
