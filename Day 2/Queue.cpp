@@ -37,6 +37,17 @@ int Queue::front() {
     }
 }
 
+int Queue::rear()
+{
+    if (!isEmpty()) {
+        return tail->data;
+    }
+    else {
+        cout << "Queue is empty!" << endl;
+        return '-1';
+    }
+}
+
 bool Queue::isEmpty() {
     return list.head == nullptr;
 }

@@ -16,6 +16,7 @@ public:
     void enQueue(int value);
     void deQueue();
     int front();
+    int rear();
     bool isEmpty();
     bool isFull();
     void print();
