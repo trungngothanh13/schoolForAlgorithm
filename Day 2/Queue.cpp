@@ -2,7 +2,7 @@
 using namespace std;
 
 // Adds a new value to the back of the queue
-void Queue::enQueue(char value) {
+void Queue::enQueue(int value) {
     Node* newNode = new Node(value);
     if (isEmpty()) {
         list.head = newNode;
@@ -30,7 +30,7 @@ void Queue::deQueue() {
 }
 
 // Returns the value at the front of the queue without removing it
-char Queue::front() {
+int Queue::front() {
     if (!isEmpty()) {
         return list.head->data;
     }

@@ -8,9 +8,9 @@ class Stack {
 private:
     List list;
 public:
-    void push(char value);
+    void push(int value);
     void pop();
-    char top();
+    int top();
     bool isEmpty();
     bool isFull();
 };

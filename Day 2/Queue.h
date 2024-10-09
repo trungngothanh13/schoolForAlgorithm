@@ -13,9 +13,9 @@ public:
         tail = nullptr;
     }
 
-    void enQueue(char value);
+    void enQueue(int value);
     void deQueue();
-    char front();
+    int front();
     bool isEmpty();
     bool isFull();
 };

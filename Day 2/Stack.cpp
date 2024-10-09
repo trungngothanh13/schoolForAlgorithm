@@ -3,7 +3,7 @@
 using namespace std;
 
 // Pushes a new value onto the stack
-void Stack::push(char value) {
+void Stack::push(int value) {
     Node* newNode = new Node(value);
     newNode->next = list.head;
     list.head = newNode;
@@ -22,7 +22,7 @@ void Stack::pop() {
 }
 
 // Returns the top value of the stack without removing it
-char Stack::top() {
+int Stack::top() {
     if (!isEmpty()) {
         return list.head->data;
     }
