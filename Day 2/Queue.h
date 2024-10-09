@@ -18,4 +18,5 @@ public:
     int front();
     bool isEmpty();
     bool isFull();
+    void print();
 };

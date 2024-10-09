@@ -41,3 +41,7 @@ bool Stack::isEmpty() {
 bool Stack::isFull() {
     return false; // Stack is never full since it's based on dynamic memory allocation
 }
+
+void Stack::print() {
+    list.traverse();
+}

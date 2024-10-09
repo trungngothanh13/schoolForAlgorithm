@@ -1,7 +1,6 @@
 #include "Queue.h"
 using namespace std;
 
-// Adds a new value to the back of the queue
 void Queue::enQueue(int value) {
     Node* newNode = new Node(value);
     if (isEmpty()) {
@@ -14,13 +13,12 @@ void Queue::enQueue(int value) {
     }
 }
 
-// Removes the value at the front of the queue
 void Queue::deQueue() {
     if (!isEmpty()) {
         Node* temp = list.head;
         list.head = list.head->next;
         delete temp;
-        if (list.head == nullptr) { // If the list becomes empty, reset the tail as well
+        if (list.head == nullptr) {
             tail = nullptr;
         }
     }
@@ -29,7 +27,6 @@ void Queue::deQueue() {
     }
 }
 
-// Returns the value at the front of the queue without removing it
 int Queue::front() {
     if (!isEmpty()) {
         return list.head->data;
@@ -40,12 +37,14 @@ int Queue::front() {
     }
 }
 
-// Checks if the queue is empty
 bool Queue::isEmpty() {
     return list.head == nullptr;
 }
 
-// Dummy function for isFull (no practical limit in a dynamic list)
 bool Queue::isFull() {
     return false; // Queue is never full since it's based on dynamic memory allocation
+}
+
+void Queue::print() {
+    list.traverse();
 }

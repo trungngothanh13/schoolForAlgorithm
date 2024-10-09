@@ -12,3 +12,9 @@ List::~List() {
 	}
 	head = nullptr;
 }
+
+void List::traverse()
+{
+	for (Node* i = head; i != nullptr; i = i->next)
+		cout << i->data << " ";
+}
