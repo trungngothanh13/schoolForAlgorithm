@@ -2,9 +2,9 @@
 
 class Node {
 public:
-	char data;
+	int data;
 	Node* next;
-	Node(char data) {
+	Node(int data) {
 		this->data = data;
 		this->next = 0;
 	}
