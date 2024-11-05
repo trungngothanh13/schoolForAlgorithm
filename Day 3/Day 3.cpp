@@ -9,7 +9,7 @@ int main()
 {
 	vector<int> A;
 	A.push_back(12);
-	A.push_back(17);
+	A.push_back(12);
 	A.push_back(63);
 	A.push_back(44);
 	A.push_back(27);
@@ -23,5 +23,7 @@ int main()
 
 	sort(A.begin(), A.end());
 
+
+	//cout << countBinarySearchStyle(A, 12, 0, A.size() - 1) << endl;
 	cout << interpolationSearch(A, 367);
 }
