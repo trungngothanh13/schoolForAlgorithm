@@ -1,36 +1,26 @@
 #include <iostream>
 #include <algorithm>
-#include "Queue.h"
+#include "Stack.h"
 
 using namespace std;
 
+void part1_IC()
+{
+	Stack checkStack;
+	checkStack.push(12);
+	checkStack.push(18);
+	checkStack.push(72);
+	checkStack.push(64);
+	checkStack.push(138);
+	checkStack.push(456);
+	checkStack.pop();
+	checkStack.pop();
+	if (checkStack.isEmpty()) cout << "Stack is empty" << endl;
+	if (checkStack.isFull()) cout << "Stack is full" << endl;
+}
 
 int main() 
 {
-	Queue newQueue;
-	newQueue.enQueue(117);
-	newQueue.enQueue(446);
-	newQueue.enQueue(2);
-	newQueue.enQueue(53);
-	newQueue.enQueue(468);
+	part1_IC();
 
-	newQueue.print(); cout << endl;
-
-	newQueue.deQueue();
-
-	newQueue.print(); cout << endl;
-
-	if (newQueue.isEmpty())
-		cout << "Queue is empty";
-	else
-		cout << "Queue is not empty";
-	cout << endl;
-
-	if (newQueue.isFull())
-		cout << "Queue is full";
-	else
-		cout << "Queue is not full";
-	cout << endl;
-
-	cout << newQueue.front() << " " << newQueue.rear();
 }
