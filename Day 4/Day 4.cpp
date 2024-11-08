@@ -25,12 +25,10 @@ int main() {
     vector<int> quickSortArray;
     vector<int> mergeSortArray;
 
-    // Quick Sort
     inputArray(quickSortArray);
     quickSort(quickSortArray, 0, quickSortArray.size() - 1);
     printArray(quickSortArray);
 
-    // Merge Sort
     inputArray(mergeSortArray);
     mergeSort(mergeSortArray, 0, mergeSortArray.size() - 1);
     printArray(mergeSortArray);
