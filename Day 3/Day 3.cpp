@@ -7,23 +7,11 @@ using namespace std;
 
 int main()
 {
-	vector<int> A;
-	A.push_back(12);
-	A.push_back(12);
-	A.push_back(63);
-	A.push_back(44);
-	A.push_back(27);
-	A.push_back(117);
-	A.push_back(741);
-	A.push_back(624);
-	A.push_back(44);
-	A.push_back(32);
-	A.push_back(367);
-	A.push_back(181);
+	vector<int> A = { 12, 12, 12, 6, 3, 4, 7, 367 };
 
 	sort(A.begin(), A.end());
 
 
-	//cout << countBinarySearchStyle(A, 12, 0, A.size() - 1) << endl;
 	cout << interpolationSearch(A, 367);
+	cout << exponentialSearch(A, 7);
 }

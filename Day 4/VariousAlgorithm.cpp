@@ -7,11 +7,11 @@ void quickSort(vector<int>& arr, int left, int right) {
         int partitionIndex = left;
         for (int i = left; i < right; i++) {
             if (arr[i] <= pivot) {
-                std::swap(arr[i], arr[partitionIndex]);
+                swap(arr[i], arr[partitionIndex]);
                 partitionIndex++;
             }
         }
-        std::swap(arr[partitionIndex], arr[right]);
+        swap(arr[partitionIndex], arr[right]);
 
         quickSort(arr, left, partitionIndex - 1);
         quickSort(arr, partitionIndex + 1, right);

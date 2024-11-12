@@ -5,14 +5,6 @@
 
 using namespace std;
 
-void inputArray(vector<int>& arr) {
-    int n;
-    cin >> n;
-    arr.resize(n);
-    for (int i = 0; i < n; i++) {
-        cin >> arr[i];
-    }
-}
 
 void printArray(const vector<int>& arr) {
     for (int num : arr) {
@@ -22,14 +14,12 @@ void printArray(const vector<int>& arr) {
 }
 
 int main() {
-    vector<int> quickSortArray;
-    vector<int> mergeSortArray;
+    vector<int> quickSortArray = { 4, 1, 2, 4, 5 };
+    vector<int> mergeSortArray = { 4, 1, 2, 5, 7 };
 
-    inputArray(quickSortArray);
     quickSort(quickSortArray, 0, quickSortArray.size() - 1);
     printArray(quickSortArray);
 
-    inputArray(mergeSortArray);
     mergeSort(mergeSortArray, 0, mergeSortArray.size() - 1);
     printArray(mergeSortArray);
 
